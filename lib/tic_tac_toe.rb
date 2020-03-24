@@ -32,7 +32,7 @@ end
   end
 
 def position_taken?(position)
-  if @board[postion] == "X" || @board[postion] == "0"
+  if @board[position] == "X" || @board[position] == "0"
     true
   else
     false
