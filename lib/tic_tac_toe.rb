@@ -74,7 +74,7 @@ end
       move(input, current_player)
     else
       turn
-    end 
+    end
     display_board
   end
 
