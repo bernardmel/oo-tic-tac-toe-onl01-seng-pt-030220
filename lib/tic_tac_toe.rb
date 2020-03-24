@@ -31,12 +31,12 @@ end
     @board[index] = current_player
   end
 
-  def position_taken?(index)
-    if @board[index] == "X" || @board[index] == "O"
-      true
-    else
-      false
-    end
+def position_taken?(index)
+  if @board[index] == "X" || @board[index] == "O"
+    true
+  else
+    false
+  end
 end
 
 
