@@ -68,14 +68,15 @@ def current_player
 end
 
 def turn
-  puts "Please enter 1-9:"
-  input = gets.strip
-  if valid_move?(input)
-    move(input, current_player)
+  puts "Please choose a number 1-9:"
+  user_input = gets.chomp
+  index = input_to_index(user_input)
+  if valid_move?(index)
+    player_token = current_player
+    move(index, player_token)
+    display_board
   else
     turn
   end
-  display_board
-end
 
 end
