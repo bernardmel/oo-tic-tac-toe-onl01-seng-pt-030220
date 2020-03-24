@@ -31,8 +31,8 @@ end
     @board[location] = current_player
   end
 
-def position_taken?(position)
-  if @board[position] == "X" || @board[position] == "0"
+def position_taken?(index)
+  if @board[index] == "X" || @board[index] == "0"
     true
   else
     false
