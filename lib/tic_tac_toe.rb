@@ -37,8 +37,6 @@ def position_taken?(position)
   else
     false
   end
-  
-
 end
 
 
