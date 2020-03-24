@@ -40,7 +40,7 @@ def position_taken?(index)
 end
 
 def valid_move?(index)
-  position = position.to_i - 1
+  index = index.to_i - 1
   if index.between?(0,8) && !position_taken?(index)
     true
   else
