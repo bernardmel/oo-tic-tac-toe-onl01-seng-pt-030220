@@ -27,12 +27,18 @@ end
     user_input.to_i - 1
   end
 
-  def move(index, current_player = "X")
-    @board[index] = current_player
+  def move(location, current_player = "X")
+    @board[location] = current_player
   end
 
-def position_taken?(index)
-  !(@aboard[index].nil? || @board[index] == "")
+def position_taken?(position)
+  if @board[postion] == "X" || @board[postion] == "0"
+    true
+  else
+    false
+  end
+  
+  
 end
 
 
