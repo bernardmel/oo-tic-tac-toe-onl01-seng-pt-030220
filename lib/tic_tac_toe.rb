@@ -73,9 +73,9 @@ end
     if valid_move?(user_input)
       move(input, current_player)
     else
-      turn
+      display_board
     end
-    display_board
+    turn
   end
 
 end
