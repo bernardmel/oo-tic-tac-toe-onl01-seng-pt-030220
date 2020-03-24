@@ -70,7 +70,7 @@ end
   def turn
     puts "Please choose a number 1-9:"
     user_input = gets.strip
-    if valid_move?(input)
+    if valid_move?(index)
       move(input, current_player)
     else
       turn
