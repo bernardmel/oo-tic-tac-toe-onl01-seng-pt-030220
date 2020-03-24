@@ -27,9 +27,7 @@ end
     user_input.to_i - 1
   end
 
-  def move(location, current_player = "X")
-    @board[location] = current_player
-  end
+  
 
 def position_taken?(index)
   if @board[index] == "X" || @board[index] == "0"
